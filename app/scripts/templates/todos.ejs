@@ -1,0 +1,46 @@
+<div class="todo-archive">
+    <a id="see-archive">Show Archive</a>
+    <a id="do-archive">Archive Completed</a>
+</div>
+<form class="input-append">
+    <input type="text" id="new-todo" placeholder="What do you need to do today?">
+    <input type="submit" class="btn" value="Add Todo">
+</form>
+<div class="todo-header">
+    <div class="filter"></div>
+    <div class="completed">Completed</div>
+    <div class="title">Title</div>
+    <div class="date">Date</div>
+    <div class="priority">Priority</div>
+</div>
+<div class="todo-filter">
+    <div class="completed">
+        <select id="completedFilter">
+            <option value="-1"></option>
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+        </select>
+    </div>
+    <div class="title">
+        <input type="text" id="titleFilter">
+    </div>
+    <div class="date">
+        <input type="text" id="dateFilter">
+    </div>
+    <div class="priority">
+        <select id="priorityFilter">
+            <option value="-1"></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+</div>
+<ul id="todos" class="todos">
+    <!-- Where our To Do items will go -->
+</ul>
+<ul id="archiveTodos" class="todos hideArchive">
+    <!-- Where our To Do items will go -->
+</ul>
+

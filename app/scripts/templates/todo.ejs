@@ -1,0 +1,25 @@
+
+    <div class="completed">
+        <input type="checkbox" <% if (completed) { %>checked<% } %>>
+    </div>
+    <div class="todoInput">
+        <form id="todoInput">
+            <input type="text" value="<%= title %>">
+        </form>
+    </div>
+    <div class="title">
+        <span>
+            <%= title %>
+        </span>
+    </div>
+    <div class="date">
+        <%= dateString %>
+    </div>
+    <div class="priority">
+        <select id="priority">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+        </select>
+    </div>
